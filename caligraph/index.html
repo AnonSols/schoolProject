@@ -2,43 +2,23 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link
+  href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+  rel="stylesheet"
+/>
+<link
+  href="https://fonts.googleapis.com/css2?family=Sono:wght@400;500;600&display=swap"
+  rel="stylesheet"
+/>
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <title>Scratchy Nib</title>
   </head>
   <body>
     <div id="root"></div>
-    <div class="ticker">
-      <p>
-        Current date: 04-Oct-2024 | Time: 10:15 AM | Location: New York, USA
-      </p>
-    </div>
-
-    <style>
-      .ticker {
-        width: 100%;
-        background-color: #f2f2f2;
-        overflow: hidden;
-        white-space: nowrap;
-        box-sizing: border-box;
-      }
-
-      .ticker p {
-        display: inline-block;
-        padding-left: 100%;
-        animation: ticker-scroll 10s linear infinite;
-      }
-
-      @keyframes ticker-scroll {
-        0% {
-          transform: translateX(100%);
-        }
-        100% {
-          transform: translateX(-100%);
-        }
-      }
-    </style>
-
+ 
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
