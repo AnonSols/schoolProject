@@ -7,4 +7,3 @@ const App = () => {
 
 export default App
 
-c:\Users\Ubeath\desktop\TeamFt\TeamFt\src
