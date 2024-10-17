@@ -1,4 +1,4 @@
-const feedbackData = [
+export const feedbackData = [
   {
     id: 1,
     name: "John Doe",
@@ -65,5 +65,4 @@ const feedbackData = [
       "Impressed with the modern touch to calligraphy. Keep up the good work!",
   },
 ];
-
-export default feedbackData;
+ 

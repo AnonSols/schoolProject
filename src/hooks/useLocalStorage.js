@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 
 //change the initial state type later
-export function useLocalStorageState(initialState, key ) {
-  const [value, setValue] = useState (function () {
+export function useLocalStorageState(initialState, key) {
+  const [value, setValue] = useState(function () {
     const storedValue = localStorage.getItem(key);
     return storedValue ? JSON.parse(storedValue) : initialState;
   });
@@ -14,5 +14,5 @@ export function useLocalStorageState(initialState, key ) {
     [value, key]
   );
 
-  return [value,setValue] as const;
+  return [value, setValue];
 }

@@ -37,7 +37,7 @@ const Links = ({ setOpen }) => {
         <motion.a
           href={`#${item}`}
           key={item}
-          onClick={() => setOpen((state) => !state)}
+          onClick={() => setOpen(false)}
           className="text-[20px] sm:text-[40px]"
           variants={itemVariants}
           whileHover={{ scale: 1.1 }}

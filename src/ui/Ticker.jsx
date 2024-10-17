@@ -1,44 +1,29 @@
-// const Ticker = () => {
-//   return (<div>Ticker</div>
-//     // <div>   <div className="ticker">
-//     //   <p>
-//     //     Current date: 04-Oct-2024 | Time: 10:15 AM | Location: New York, USA
-//     //   </p>
-//     // </div>
-// {/*
-//     <style>
-//       .ticker {
-//         width: 100%;
-//         background-color: #f2f2f2;
-//         overflow: hidden;
-//         white-space: nowrap;
-//         box-sizing: border-box;
-//       }
-
-//       .ticker p {
-//         display: inline-block;
-//         padding-left: 100%;
-//         animation: ticker-scroll 10s linear infinite;
-//       }
-
-//       @keyframes ticker-scroll {
-//         0% {
-//           transform: translateX(100%);
-//         }
-//         100% {
-//           transform: translateX(-100%);
-//         }
-//       }
-//     </style> */}
-// // </div>
-
-//   )
-// }
-
-// export default Ticker
+import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 const Ticker = () => {
-  return <div>Ticker</div>;
+  const [dateTime, setDateTime] = useState(new Date().toLocaleString());
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setDateTime(new Date().toLocaleString());
+    }, 1000);
+
+    return () => clearInterval(timer);
+  }, []);
+
+  return (
+    <motion.div
+      className="overflow-hidden whitespace-nowrap bg-gray-800 text-white p-2"
+      animate={{ x: ["100%", "-100%"] }}
+      transition={{ duration: 20, ease: "linear", repeat: Infinity }}
+    >
+      <span>{`Current Date and Time: ${dateTime} | `}</span>
+      <span>{`Visitor Count: ${
+        localStorage.getItem("visitorCount") || 0
+      }`}</span>
+    </motion.div>
+  );
 };
 
 export default Ticker;

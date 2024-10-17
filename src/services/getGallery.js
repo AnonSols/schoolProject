@@ -1,4 +1,4 @@
-import { galleryData } from "../../data";
+import { galleryData } from "../data";
 
 export function getGallery() {
   return new Promise((resolve) => {

@@ -7,5 +7,7 @@ export function useGallery() {
     queryFn: getGallery,
   });
 
+  console.log("Styles:", galleries); // Log the fetched styles
+  console.log("Loading:", isLoadingGalleries); // Log loading state
   return { galleries, isLoadingGalleries };
 }
