@@ -1,0 +1,64 @@
+ 
+### **App Structure Roadmap**
+
+#### 1. **Header**
+   - **First Navbar (Top Nav)**
+     - Left: Navigation links (e.g., Home, About Us, Contact)
+     - Center: Logo (SN)
+     - Right: Page count or visitor counter
+   - **Second Navbar (Bottom Nav)**
+     - Links to the different calligraphy styles (Traditional, Contemporary, Modern, etc.)
+
+#### 2. **Hero Section**
+   - Left: A brief history of calligraphy
+   - Right: Calligraphy image or another brief detail related to the history
+
+#### 3. **Gallery Section**
+   - A section prompting users to visit the gallery
+   - Add a button that links to the **Gallery page**
+   
+#### 4. **About Us Section**
+   - A brief introduction to the Scratchy Nib team or project
+   - Add a button linking to a dedicated **About Us route/page**
+
+#### 5. **Testimonial Section**
+   - A slideshow/carousel featuring user feedback/testimonials
+
+#### 6. **Feedback Section**
+   - A form where users can submit feedback
+   - **Newsletter form** to collect email addresses (on desktop, it will be part of the footer)
+
+#### 7. **Contact Section**
+   - Display contact details (email, phone, address)
+
+#### 8. **Footer**
+   - Include relevant footer details (site map, copyright, social media links, etc.)
+   - On desktop: Place the **newsletter subscription form** here
+
+---
+
+### **Traditional, Contemporary, Modern Pages**
+- These should be individual sections that display information about each calligraphy style. Each page could include:
+  - A brief description of the style
+  - History and significance
+  - Example images or fonts in that style (with a button linking to the gallery filtered for that style)
+
+---
+
+### **Key Points for Clarity & Adjustments**
+1. **Routing:** 
+   - Use React Router for seamless navigation across these sections and pages (e.g., Home, About Us, Gallery, Feedback).
+   - Ensure the buttons or links in sections like **Gallery** and **About Us** navigate to their respective routes.
+
+2. **Navigation:**
+   - First navbar should be sticky for easy access.
+   - Second navbar could have smooth scrolling to each style section if it’s on the same page, or link to dedicated style pages if you prefer.
+
+3. **Section Layout:**
+   - Make sure each section has padding/margins for clean spacing.
+   - Each section (Gallery, About Us, etc.) can be divided with full-width background colors to distinguish them.
+
+4. **Responsiveness:**
+   - Use media queries or flexbox/grid to rearrange content based on screen size.
+   - Ensure the feedback section’s form moves into the footer on larger screens (desktop view).
+ 
