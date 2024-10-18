@@ -135,6 +135,26 @@
     font-size: 1.6rem;
   }
 
+  p{
+    font-family: "Roboto", sans-serif;
+    line-height: 1.5;
+  }
+
+  .great-vibes-regular {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  .playfair{
+  font-family: "Playfair", serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
   input,
   button,
   textarea,

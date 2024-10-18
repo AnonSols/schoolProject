@@ -5,6 +5,7 @@ import PageNotFound from "./ui/PageNotFound";
 import Cursor from "./ui/Cursor";
 import Gallery from "./pages/Gallery";
 import About from "./pages/About";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { AnimatePresence } from "framer-motion";
 const queryClient = new QueryClient({
   defaultOptions: {

@@ -28,54 +28,136 @@ const Header = () => {
 
   return (
     <>
-      <div className="">
+      <div>
         <img
           src="/wallpaperTwo.jpg"
           alt="background"
-          className="absolute z-[-99] w-full  h-full object-cover"
+          className="position-absolute w-100 h-100 object-cover"
+          style={{ zIndex: -99 }}
         />
       </div>
-      <header className=" grid h-full w-full grid-rows-[auto_auto_1fr]">
+      <header
+        className="d-grid h-100 w-100"
+        style={{ gridTemplateRows: "auto auto 1fr" }}
+      >
         <Nav />
-        <div className="flex items-center justify-end mx-4 mt-4 text-white">
-          {/* <div>styles</div> */}
-
-          <div className="self-end">
+        <div className="d-flex align-items-center justify-content-end mx-4 mt-4 text-white">
+          <div>
             <VisitorsCount />
           </div>
         </div>
-        <section className="flex flex-col h-full mx-4">
+        <section className="d-flex flex-column h-100 mx-4">
           <motion.div
             variants={textVariants}
-            className=" text-black text-2xl items-center bg-slate-100/50 backdrop-blur-lg   mx-10 flex justify-center font-bold mt-[35%] border border-white rounded-lg p-5"
+            className="d-flex flex-column align-items-center justify-content-center text-black bg-light bg-opacity-50 rounded p-4"
+            style={{ marginTop: "35%", border: "1px solid white" }}
           >
-            Calligraphy the art of beautiful handwritting, has a rich and
-            diverse history that spans centuries and cultures. Calligraphy is
-            more than mere lettering; it&apos;s a visual expression of language
-            that transforms words into an art form.
-            <br /> <br />
-            The origins of calligraphy can be traced back to the ancient
-            civilizations of China, Egypt, and Mesopotamia. As early as 3000
-            BCE, the Egyptians developed hieroglyphics, a complex system of
-            pictorial writing that required great skill and precision.
+            <div className="container my-5 p-4 bg-white shadow rounded">
+              <h1 className="great-vibes-regular display-4 text-dark mb-4">
+                Calligraphy: The Art of Beautiful Writing
+              </h1>
+              <p className="lead text-secondary mb-4">
+                Calligraphy, derived from the Greek words "kallos" (beauty) and
+                "graphein" (to write), is the art of creating elegant,
+                decorative, and expressive writing...
+              </p>
+
+              <h2 className="playfair h4 text-dark mb-3">Historical Origins</h2>
+              <p className="text-secondary mb-4">
+                Calligraphy has a rich and diverse history, spanning cultures
+                and eras...
+              </p>
+
+              <h2 className="playfair h4 text-dark mb-3">
+                Styles and Techniques
+              </h2>
+              <p className="text-secondary mb-4">
+                The world of calligraphy is vast, with many different styles,
+                each characterized by its own rules, techniques, and tools...
+              </p>
+              <ul className="list-unstyled text-secondary mb-4">
+                <li>
+                  <strong className="playfair">Western Calligraphy</strong> -
+                  Often based on scripts like Copperplate, Italic, and Gothic...
+                </li>
+                <li>
+                  <strong className="playfair">Arabic Calligraphy</strong> -
+                  Known for its flowing, curvilinear script...
+                </li>
+                <li>
+                  <strong className="playfair">
+                    Chinese & Japanese Calligraphy
+                  </strong>{" "}
+                  - Considered a high art form...
+                </li>
+                <li>
+                  <strong className="playfair">Indic Calligraphy</strong> -
+                  Featuring scripts like Devanagari and Gurmukhi...
+                </li>
+              </ul>
+
+              <h2 className="playfair h4 text-dark mb-3">Modern Calligraphy</h2>
+              <p className="text-secondary mb-4">
+                In recent years, calligraphy has evolved into a modern,
+                expressive art form...
+              </p>
+
+              <h2 className="playfair h4 text-dark mb-3">
+                Tools and Materials
+              </h2>
+              <p className="text-secondary mb-4">
+                The tools of calligraphy are varied, each lending a distinct
+                style to the art...
+              </p>
+              <ul className="list-unstyled text-secondary mb-4">
+                <li>
+                  <strong className="playfair">Pens</strong>: From dip pens with
+                  pointed nibs to brush pens...
+                </li>
+                <li>
+                  <strong className="playfair">Brushes</strong>: Widely used in
+                  Asian calligraphy...
+                </li>
+                <li>
+                  <strong className="playfair">Inks</strong>: High-quality,
+                  richly pigmented inks...
+                </li>
+                <li>
+                  <strong className="playfair">Papers</strong>: Smooth,
+                  high-quality paper helps avoid ink bleeding...
+                </li>
+              </ul>
+
+              <h2 className="playfair h4 text-dark mb-3">
+                The Beauty of Calligraphy
+              </h2>
+              <p className="text-secondary mb-4">
+                What makes calligraphy truly special is its ability to convey
+                emotion through form...
+              </p>
+
+              <h2 className="playfair h4 text-dark mb-3">Conclusion</h2>
+              <p className="text-secondary mb-4">
+                Calligraphy is more than just beautiful writing; it's a timeless
+                art that blends history, culture, and creativity...
+              </p>
+            </div>
           </motion.div>
 
           <motion.div
             initial="initial"
             variants={textVariants}
             animate="animate"
-            className=" mt-[32%]"
+            className="mt-5"
           >
-            {" "}
             <a href="#Styles">
               <motion.div
                 variants={textVariants}
                 animate="scrollButton"
-                className="text-white text-[6rem] items-bottom justify-center flex cursor-pointer bottom-5"
-                alt=""
+                className="text-white display-1 d-flex justify-content-center cursor-pointer"
               >
                 <RiScrollToBottomLine />
-              </motion.div>{" "}
+              </motion.div>
             </a>
           </motion.div>
         </section>

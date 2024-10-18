@@ -1,7 +1,7 @@
 // import Nav from "./Nav";
 import Header from "./Header";
 import Styles from "../pages/Styles";
-import Gallery from "../pages/Gallery";
+import Gallery from "../ui/Gallery";
 import Feedback from "../pages/Feedback";
 import Contact from "../pages/Contact";
 import Footer from "./Footer";

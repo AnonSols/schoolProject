@@ -2,75 +2,91 @@ export const galleryData = [
   {
     id: 1,
     style: "Arabic",
-    title: "Beautiful Arabic Calligraphy",
-    imageUrl: "https://images.unsplash.com/photo-1562042617-0b3e8e0b7f5d",
+    title: "Amiri",
+    imageUrl:
+      "https://www.fontmirror.com/app_public/files/t/1/featured_image/2020/01/featured_1075.jpg",
     description:
-      "An intricate piece of Arabic calligraphy showcasing traditional elegance.",
+      "Amiri is a classical Arabic typeface inspired by Naskh scripts. It’s elegant, legible, and ideal for typesetting traditional texts. The beautiful curves and balanced proportions make it suitable for both headings and body text.",
   },
   {
     id: 2,
     style: "Indic",
-    title: "Vibrant Indic Calligraphy",
-    imageUrl: "https://images.unsplash.com/photo-1519337265831-281ec6cc8514",
-    description: "A vibrant and cultural piece of Indic calligraphy.",
+    title: "Noto Sans Devanagari",
+    imageUrl:
+      "https://www.cufonfonts.com/images/thumb/107446/noto-sans-devanagari-741x415-1a8e3a9769.jpg",
+    description:
+      "This font is part of the Noto family, designed to cover all languages. Noto Sans Devanagari is clean and highly legible, making it suitable for modern applications while respecting the traditional aesthetic of Devanagari script",
   },
   {
     id: 3,
     style: "Greek",
-    title: "Graceful Greek Script",
-    imageUrl: "https://images.unsplash.com/photo-1605880127353-ffb4c67d2afc",
-    description: "A beautiful ancient Greek script calligraphy.",
+    title: "Cormorant Garamond",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ7G-ifOulsE4Lt0XzIhVtqsNBzwimYvrooQ&s",
+    description:
+      " While primarily a Latin font, Cormorant Garamond supports Greek and has a traditional design reminiscent of old-style typefaces. Its sophisticated serifs and elegant curves make it suitable for classical literature and artistic projects.",
   },
   {
     id: 4,
     style: "Modern",
-    title: "Modern Hand-Lettering",
-    imageUrl: "https://images.unsplash.com/photo-1592878849126-bb7493a5636b",
-    description: "A bold, contemporary take on modern hand-lettering.",
+    title: "Great Vibes",
+    imageUrl:
+      "https://www.fontmirror.com/app_public/files/t/1/featured_image/2020/01/featured_1382.jpg",
+    description:
+      "A flowing script font with elegant loops and swashes, Great Vibes captures the essence of modern calligraphy. Ideal for branding, invitations, and any project that requires a touch of sophistication and style.",
   },
   {
     id: 5,
     style: "Traditional",
-    title: "Classic Traditional Calligraphy",
-    imageUrl: "https://images.unsplash.com/photo-1521762821759-dab35448ed1c",
-    description: "A graceful and classic form of traditional calligraphy.",
+    title: "Zeyada",
+    imageUrl:
+      "https://www.fontmirror.com/app_public/files/t/1/featured_image/2020/01/featured_1944.jpg",
+    description:
+      "Zeyada is a classic script font that captures the essence of traditional calligraphy. With its fluid strokes and decorative elements, it’s perfect for formal invitations, titles, and artistic projects where elegance is key.",
   },
   {
     id: 6,
     style: "Arabic",
-    title: "Arabic Calligraphy Art",
-    imageUrl: "https://images.unsplash.com/photo-1605056743844-0a9dea5a7c8f",
-    description: "An artistic piece showcasing Arabic calligraphy.",
+    title: "Cairo",
+    imageUrl:
+      "https://www.fontmirror.com/app_public/files/t/1/featured_image/2020/01/featured_1193.jpg",
+    description:
+      "Cairo is a contemporary Arabic font that features a modern geometric design while retaining traditional roots. Its clear and structured appearance makes it perfect for contemporary web designs, advertising, and branding.",
   },
   {
     id: 7,
     style: "Indic",
-    title: "Indic Script Calligraphy",
-    imageUrl: "https://images.unsplash.com/photo-1524077484484-6f0d5a93b815",
+    title: "Tangerine",
+    imageUrl:
+      "https://www.fontmirror.com/app_public/files/t/1/featured_image/2020/01/featured_1880.jpg",
     description:
-      "A decorative Indic calligraphy piece representing culture and art.",
+      "Tangerine is a calligraphic font inspired by the informal scripts of the Renaissance. It is ideal for invitations and elegant designs, showcasing the beauty of the Indic script with a contemporary twist.",
   },
   {
     id: 8,
     style: "Greek",
-    title: "Ancient Greek Calligraphy",
-    imageUrl: "https://images.unsplash.com/photo-1597887403313-7bcf1389ef7d",
+    title: "Gloock",
+    imageUrl:
+      "https://fontsfree.net/wp-content/uploads/2023/07/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA-%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0-2023-07-08-%D0%B2-01.07.33.png",
     description:
-      "A vintage and elegant Greek script representing history and art.",
+      "Gloock is a modern serif font that also includes Greek characters. It has a distinctive style with strong lines and subtle curves, making it suitable for both contemporary and traditional Greek typography in various applications.",
   },
   {
     id: 9,
     style: "Modern",
-    title: "Creative Modern Hand-Lettering",
-    imageUrl: "https://images.unsplash.com/photo-1601396189232-7f5b33d7e676",
+    title: "Satisfy",
+    imageUrl:
+      "https://www.fontmirror.com/app_public/files/t/1/featured_image/2020/01/featured_1984.jpg",
     description:
-      "A creative modern hand-lettering artwork with fresh elements.",
+      "Satisfy is a stylish script font that has an elegant yet relaxed vibe. It is perfect for projects that require a personal touch, such as greetings, social media graphics, and artistic branding",
   },
   {
     id: 10,
     style: "Traditional",
-    title: "Traditional Calligraphy Flourish",
-    imageUrl: "https://images.unsplash.com/photo-1500417148159-25e2f1e2d343",
-    description: "A traditional calligraphy piece with intricate flourishes.",
+    title: "Merriweather",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMCsxYsrr-PWvzTbeVI0jKDP8-zseb0_VTDA&s",
+    description:
+      "A classic serif font with a timeless design. It has a slightly condensed style that gives a formal and dignified look, perfect for traditional websites or print media.",
   },
 ];

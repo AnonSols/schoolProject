@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 
+// Define the transition variants
 const variants = {
   open: {
     transition: {
@@ -13,6 +14,8 @@ const variants = {
     },
   },
 };
+
+// Define item variants for animation
 const itemVariants = {
   open: {
     y: 0,
@@ -26,24 +29,32 @@ const itemVariants = {
 
 // eslint-disable-next-line react/prop-types
 const Links = ({ setOpen }) => {
-  const items = ["Homepage", "Styles", "About", "Contact", "Feedbacks"];
+  // Define the items for navigation
+  const items = [
+    { name: "Homepage", link: "/" },
+    { name: "Styles", link: "#" },
+    { name: "About", link: "/about" }, // About links to another page
+    { name: "Gallery", link: "/gallery" }, // About links to another page
+    { name: "Contact", link: "#" },
+    { name: "Feedbacks", link: "#" },
+  ];
 
   return (
     <motion.div
-      className="  absolute w-full h-full flex flex-col items-center justify-center gap-[20px]"
+      className="absolute w-full h-full flex flex-col items-center justify-center gap-[20px]"
       variants={variants}
     >
-      {items.map((item) => (
+      {items.map(({ name, link }) => (
         <motion.a
-          href={`#${item}`}
-          key={item}
+          href={link}
+          key={name}
           onClick={() => setOpen(false)}
           className="text-[20px] sm:text-[40px]"
           variants={itemVariants}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}
         >
-          {item}
+          {name}
         </motion.a>
       ))}
     </motion.div>

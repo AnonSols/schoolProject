@@ -10,13 +10,15 @@ const Styles = () => {
   if (!styles.stylesData) {
     return <div>No styles available.</div>; // Show a message if no styles are available
   }
+  const limitedStyleData = styles.stylesData.slice(0, 6);
+
   return (
     <div className="container mx-auto px-4 py-8 text-black">
       <h1 className="text-3xl font-bold mb-6 text-center">
         Calligraphy Styles
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {styles.stylesData.map((style, index) => (
+        {limitedStyleData.map((style, index) => (
           <motion.div
             key={index}
             whileHover={{ scale: 1.05 }}
