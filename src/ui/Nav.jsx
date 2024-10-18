@@ -1,11 +1,14 @@
 import Sidebar from "./SideBar";
-// import VisitorsCount from "./VisitorsCount";
+import Links from "./Links";
 import { motion } from "framer-motion";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const Nav = () => {
   return (
-    <nav className="bg-slate-100  flex justify-between items-center z-[999] gap-4 pt-4 px-4">
-      <Sidebar />
+    <nav className="bg-light d-flex justify-content-between align-items-center z-3 gap-4 pt-3 px-3">
+      <span className="d-md-none">
+        <Sidebar />
+      </span>
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
@@ -13,11 +16,15 @@ const Nav = () => {
       >
         <img
           src="/logo.png"
-          className="w-[80px] z-[30] h-[80px]"
+          className="img-fluid"
+          style={{ width: "80px", height: "80px" }}
           alt="scratchy lib"
         />
       </motion.div>
-      {/* <VisitorsCount /> */}
+      {/* Show Links component on medium and larger screens */}
+      <div className="d-none d-md-block">
+        <Links />
+      </div>
     </nav>
   );
 };

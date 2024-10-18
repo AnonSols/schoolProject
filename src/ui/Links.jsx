@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 // Define the transition variants
 const variants = {
@@ -33,15 +34,15 @@ const Links = ({ setOpen }) => {
   const items = [
     { name: "Homepage", link: "/" },
     { name: "Styles", link: "#" },
-    { name: "About", link: "/about" }, // About links to another page
-    { name: "Gallery", link: "/gallery" }, // About links to another page
+    { name: "About", link: "/about" },
+    { name: "Gallery", link: "/gallery" },
     { name: "Contact", link: "#" },
     { name: "Feedbacks", link: "#" },
   ];
 
   return (
     <motion.div
-      className="absolute w-full h-full flex flex-col items-center justify-center gap-[20px]"
+      className="d-flex flex-column flex-md-row align-items-center justify-content-center w-100 h-100"
       variants={variants}
     >
       {items.map(({ name, link }) => (
@@ -49,7 +50,7 @@ const Links = ({ setOpen }) => {
           href={link}
           key={name}
           onClick={() => setOpen(false)}
-          className="text-[20px] sm:text-[40px]"
+          className="text-decoration-none text-dark mb-3 mx-3 fs-4"
           variants={itemVariants}
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.95 }}

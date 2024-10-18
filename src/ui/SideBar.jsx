@@ -2,6 +2,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import Links from "./Links";
 import ToggleButton from "./ToggleBtn";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 const variants = {
   open: {
@@ -21,16 +22,18 @@ const variants = {
     },
   },
 };
+
 const Sidebar = () => {
   const [open, setOpen] = useState(false);
 
   return (
     <motion.div
-      className="  flex flex-col items-center justify-center bg-white"
+      className="d-md-none d-flex flex-column align-items-center justify-content-center bg-white"
       animate={open ? "open" : "closed"}
     >
       <motion.div
-        className=" z-[999] fixed top-0 left-0 bottom-0 w-[200px] bg-white"
+        className="z-3 position-fixed top-0 start-0 bottom-0 bg-white"
+        style={{ width: "200px" }}
         variants={variants}
       >
         <Links setOpen={setOpen} />

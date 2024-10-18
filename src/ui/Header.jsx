@@ -50,8 +50,17 @@ const Header = () => {
           <motion.div
             variants={textVariants}
             className="d-flex flex-column align-items-center justify-content-center text-black bg-light bg-opacity-50 rounded p-4"
-            style={{ marginTop: "35%", border: "1px solid white" }}
+            style={{ marginTop: "15%", border: "1px solid white" }}
           >
+            {/* Main Hero Text */}
+            <motion.h1
+              className="display-3 text-dark mb-4 text-center"
+              initial={{ opacity: 0, y: -50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+            >
+              Welcome to Scratchy Nib
+            </motion.h1>
             <div className="container my-5 p-4 bg-white shadow rounded">
               <h1 className="great-vibes-regular display-4 text-dark mb-4">
                 Calligraphy: The Art of Beautiful Writing

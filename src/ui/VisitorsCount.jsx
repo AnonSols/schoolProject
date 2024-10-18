@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+
 const VisitorsCount = () => {
   const [count, setCount] = useState(0);
 
@@ -16,7 +17,7 @@ const VisitorsCount = () => {
   }, []);
 
   return (
-    <div className="p-4 rounded-md bg-slate-800 text-white align-center">
+    <div className="p-2 bg-dark text-white rounded d-flex align-items-center justify-content-center">
       Visitors: {count}
     </div>
   );
